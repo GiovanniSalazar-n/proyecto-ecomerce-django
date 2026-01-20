@@ -1,0 +1,12 @@
+{% include "ecomerce/search.html" %}
+{% include "ecomerce/messages.html" %}
+<h1>
+ vista de listado 
+</h1>
+<!-- abrir python en template-->
+{% for product in products %}
+<li>
+    <a href="/ecomerce/{{product.id}}">{{product.title}} </a>  {{product.price}} $
+    
+</li>
+{% endfor %}
